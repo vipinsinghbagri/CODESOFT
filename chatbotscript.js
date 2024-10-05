@@ -13,11 +13,14 @@ sendButton.addEventListener("click", () => {
 function respondToUserInput(userInput) { // Fixed: Removed space in function name
     let response;
     switch (true) {
-        case userInput.toLowerCase() === "hello" || userInput.toLowerCase() === "hi":
-            response = "Hello! How can I help you today?";
+        case userInput.toLowerCase() === "hello" || userInput.toLowerCase() === "hi" || userInput.toLowerCase() === "hy":
+            response = "Hello i'm Vipin's Chatbot! How can I help you today?";
+            break;
+         case userInput.toLowerCase() === "vipin" || userInput.toLowerCase() === "where is vipin" || userInput.toLowerCase() === "i want to contact vipin":
+            response = "Ok! If you Want to connect with Vipin then Mail here : vipinbagri541@gmail.com";
             break;
         case userInput.toLowerCase() === "bye" || userInput.toLowerCase() === "goodbye":
-            response = "Goodbye! It was nice chatting with you.";
+            response = "Goodbye! It was nice chatting with you..";
             break;
         case userInput.toLowerCase() === "help" || userInput.toLowerCase() === "what can you do":
             response = "I can help you with answering questions, providing information, and more!";
